@@ -8,13 +8,13 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-southeast-1" # choose your AWS region
+  region = "ap-southeast-2" # choose your AWS region
 }
 
 # Create an S3 bucket for your React app.
 resource "aws_s3_bucket" "react_app_bucket" {
   # TODO: change this one to your unique bucket name
-  bucket = "www.terraform.denreikeith.com" # must be globally unique
+  bucket = "www.terraform.galawgalawgaw.com" # must be globally unique
   # This makes sure the bucket is deleted when you run `terraform destroy`
   force_destroy = true
 }
